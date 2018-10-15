@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CR.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10,20,10,5">
+            <Label
+                Text="CENTROS DE RECICLAJE "
+                FontSize="Large"
+                FontAttributes="Italic"
+                HorizontalOptions="Center">
+            </Label>
+
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Material">
+            </Label>
+            <SearchBar Placeholder="Busca" 
+                       Grid.Row="0"
+                       Grid.Column="1"/>
+            
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="Horario">
+            </Label>
+            <DatePicker Format="D"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="10, 0" 
+                    Grid.Row="2"
+                    Grid.Column="1"    />
+
+            <Label
+                Text="Lugar"
+                Grid.Row="4"
+                Grid.Column="0">
+            </Label>
+
+            <SearchBar Placeholder="Busqueda" 
+                Grid.Row="4"
+                Grid.Column="1"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
